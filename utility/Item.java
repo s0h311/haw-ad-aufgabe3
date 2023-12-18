@@ -1,7 +1,9 @@
 // This source code is UTF-8 coded - see https://stackoverflow.com/questions/9180981/how-to-support-utf-8-encoding-in-eclipse
 package utility;
 
+
 import java.util.concurrent.atomic.AtomicLong;
+
 
 /*
  * Immutable objects have "stable" place in sorting order
@@ -21,7 +23,7 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public record Item(int sortKey, Object placeHolderForOtherFields) implements Comparable<Item> {
 
-  private static final AtomicLong sequentialItemProductionNumber = new AtomicLong();
+  private static AtomicLong sequentialItemProductionNumber = new AtomicLong();
 
   //
   public static void resetSequentialItemProductionNumber() {

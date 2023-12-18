@@ -28,7 +28,7 @@ public class AcceptanceTest {
     //
     // for each implemented sorter resp. each sorting algorithm
     for (ArraySorter<Integer> currentSorter : sorter) {
-      // do it "some times"
+      // do it "sometimes"
       for (int rc = runCnt; --rc >= 0; ) {
         // generate array to be sorted (and check list)
         final Integer[] theArray = new Integer[amountOfValues];
